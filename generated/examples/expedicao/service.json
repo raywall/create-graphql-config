@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "schema": "local:schema.json",
+  "connectors": "local:connectors.json",
+  "route": "/graphql",
+  "pretty": true,
+  "graphiql": true,
+  "allow_partial": false
+}

@@ -1,0 +1,12 @@
+{
+  "topic": "pagamentos.eventos",
+  "event": {
+    "evento": "PAGAMENTO_APROVADO",
+    "timestamp": "2026-05-13T21:55:00Z",
+    "payload": {
+      "pagamento_id": "PAG-5544",
+      "pedido_id": "PED-9988",
+      "valor_pago": 150.0
+    }
+  }
+}

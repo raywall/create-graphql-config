@@ -1,0 +1,21 @@
+{
+  "connectors": [
+    {
+      "field": "pagamento",
+      "adapter": "rest",
+      "adapterConfig": {
+        "baseUrl": "http://localhost:8082",
+        "body": "{\"pedido_id\":\"PED-9988\",\"valor_total\":150.0,\"metodo_pagamento\":\"PIX\"}",
+        "endpoint": "/api/pagamentos",
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "method": "POST"
+      },
+      "keyPattern": "/api/pagamentos",
+      "timeoutMs": 1000,
+      "retries": 1
+    }
+  ]
+}

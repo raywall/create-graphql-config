@@ -1,0 +1,31 @@
+{
+  "baseurl": "http://localhost:8082",
+  "request": {
+    "method": "POST",
+    "endpoint": "/api/pagamentos",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "body": {
+      "pedido_id": "PED-9988",
+      "valor_total": 150.0,
+      "metodo_pagamento": "PIX"
+    }
+  },
+  "response": {
+    "status_code": 201,
+    "body": {
+      "pagamento_id": "PAG-5544",
+      "status": "AGUARDANDO_PAGAMENTO",
+      "linha_digitavel": "00020126580014br.gov.bcb.pix...",
+      "qr_code_url": "https://api.pagamentos.com/qr/PAG-5544"
+    }
+  }
+}

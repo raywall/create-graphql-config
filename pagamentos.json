@@ -1,0 +1,17 @@
+{
+  "baseurl": "",
+  "request": {
+    "method": "GET",
+    "endpoint": "/api/estoque/PROD-123",
+    "headers": [],
+    "body": {}
+  },
+  "response": {
+    "status_code": 200,
+    "body": {
+      "produto_id": "PROD-123",
+      "disponivel": true,
+      "quantidade_atual": 15
+    }
+  }
+}

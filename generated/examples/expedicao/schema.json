@@ -1,0 +1,35 @@
+{
+  "types": [
+    {
+      "name": "Expedicao",
+      "fields": [
+        {
+          "name": "codigo_rastreio",
+          "type": "String"
+        },
+        {
+          "name": "expedicao_id",
+          "type": "String"
+        },
+        {
+          "name": "status",
+          "type": "String"
+        },
+        {
+          "name": "transportadora",
+          "type": "String"
+        }
+      ]
+    }
+  ],
+  "query": {
+    "name": "Query",
+    "fields": [
+      {
+        "name": "expedicao",
+        "type": "Object",
+        "ofType": "Expedicao"
+      }
+    ]
+  }
+}

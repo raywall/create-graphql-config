@@ -1,0 +1,35 @@
+{
+  "types": [
+    {
+      "name": "Pagamento",
+      "fields": [
+        {
+          "name": "linha_digitavel",
+          "type": "String"
+        },
+        {
+          "name": "pagamento_id",
+          "type": "String"
+        },
+        {
+          "name": "qr_code_url",
+          "type": "String"
+        },
+        {
+          "name": "status",
+          "type": "String"
+        }
+      ]
+    }
+  ],
+  "query": {
+    "name": "Query",
+    "fields": [
+      {
+        "name": "pagamento",
+        "type": "Object",
+        "ofType": "Pagamento"
+      }
+    ]
+  }
+}

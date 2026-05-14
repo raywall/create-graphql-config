@@ -1,0 +1,17 @@
+{
+  "connectors": [
+    {
+      "field": "estoque",
+      "adapter": "rest",
+      "adapterConfig": {
+        "baseUrl": "http://localhost:8080",
+        "endpoint": "/api/estoque/{produto_id}",
+        "headers": {},
+        "method": "GET"
+      },
+      "keyPattern": "/api/estoque/{produto_id}",
+      "timeoutMs": 1000,
+      "retries": 1
+    }
+  ]
+}

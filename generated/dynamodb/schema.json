@@ -1,0 +1,38 @@
+{
+  "types": [
+    {
+      "name": "Estoque",
+      "fields": [
+        {
+          "name": "disponivel",
+          "type": "Boolean"
+        },
+        {
+          "name": "produto_id",
+          "type": "String"
+        },
+        {
+          "name": "quantidade_atual",
+          "type": "Int"
+        }
+      ]
+    }
+  ],
+  "query": {
+    "name": "Query",
+    "fields": [
+      {
+        "name": "estoque",
+        "type": "Object",
+        "ofType": "Estoque",
+        "args": [
+          {
+            "name": "produto_id",
+            "type": "NonNull",
+            "ofType": "String"
+          }
+        ]
+      }
+    ]
+  }
+}

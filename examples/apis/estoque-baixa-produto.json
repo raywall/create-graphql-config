@@ -1,0 +1,33 @@
+{
+  "baseurl": "http://localhost:8081",
+  "request": {
+    "method": "PUT",
+    "endpoint": "/api/estoque/baixar",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "body": {
+      "pedido_id": "PED-9988",
+      "itens": [
+        {
+          "produto_id": "PROD-123",
+          "quantidade": 1
+        }
+      ]
+    }
+  },
+  "response": {
+    "status_code": 200,
+    "body": {
+      "status": "SUCESSO",
+      "mensagem": "Estoque atualizado com sucesso."
+    }
+  }
+}

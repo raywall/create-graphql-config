@@ -1,0 +1,21 @@
+{
+  "connectors": [
+    {
+      "field": "expedicao",
+      "adapter": "rest",
+      "adapterConfig": {
+        "baseUrl": "http://localhost:8083",
+        "body": "{\"pedido_id\":\"PED-9988\",\"cliente_id\":\"CLI-001\",\"endereco_entrega\":\"Rua das Flores, 123\",\"itens\":[{\"produto_id\":\"PROD-123\",\"quantidade\":1}]}",
+        "endpoint": "/api/expedicao",
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "method": "POST"
+      },
+      "keyPattern": "/api/expedicao",
+      "timeoutMs": 1000,
+      "retries": 1
+    }
+  ]
+}

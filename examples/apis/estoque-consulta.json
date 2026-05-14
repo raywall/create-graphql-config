@@ -1,0 +1,22 @@
+{
+  "baseurl": "http://localhost:8081",
+  "request": {
+    "method": "GET",
+    "endpoint": "/api/estoque/{produto_id}",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "body": {}
+  },
+  "response": {
+    "status_code": 200,
+    "body": {
+      "produto_id": "PROD-123",
+      "disponivel": true,
+      "quantidade_atual": 15
+    }
+  }
+}

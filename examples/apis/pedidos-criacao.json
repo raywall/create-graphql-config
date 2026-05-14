@@ -1,0 +1,35 @@
+{
+  "baseurl": "http://localhost:8080",
+  "request": {
+    "method": "POST",
+    "endpoint": "/api/pedidos",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "body": {
+      "cliente_id": "CLI-001",
+      "itens": [
+        {
+          "produto_id": "PROD-123",
+          "quantidade": 1
+        }
+      ],
+      "endereco_entrega": "Rua das Flores, 123"
+    }
+  },
+  "response": {
+    "status_code": 201,
+    "body": {
+      "pedido_id": "PED-9988",
+      "status": "AGUARDANDO_PAGAMENTO",
+      "pagamento_url": "https://api.pagamentos.com/qr/PAG-5544"
+    }
+  }
+}
